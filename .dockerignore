@@ -1,0 +1,9 @@
+.git
+.next
+dist
+node_modules
+src/frontend/.git
+src/frontend/.next
+src/frontend/dist
+src/frontend/node_modules
+npm-debug.log*

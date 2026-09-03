@@ -1,0 +1,10 @@
+node_modules
+dist
+.git
+.next
+.vinext
+.wrangler
+coverage
+npm-debug.log*
+.env
+.env.*
