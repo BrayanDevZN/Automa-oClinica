@@ -243,7 +243,7 @@ button { cursor: pointer; }
   .orb-two { bottom: -3%; left: -13%; width: 125px; height: 125px; }
   .orbit-one { width: 490px; height: 145px; }
 
-  .agenda-page { display: block; padding-bottom: 70px; }
+  .agenda-page { display: block; padding-top: 74px; animation: none; transform: none; }
   .agenda-page::before { top: 10%; right: -90px; width: 180px; height: 180px; opacity: .13; }
   .agenda-sidebar { display: none; }
   .agenda-content { padding: 28px 17px; }
@@ -267,10 +267,10 @@ button { cursor: pointer; }
   .appointment-person span { font-size: .65rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .appointment-type, .more-button { display: none; }
   .status-pill { padding: 5px 7px; font-size: .62rem; }
-  .mobile-nav { position: fixed; right: 0; bottom: 0; left: 0; z-index: 5; display: grid; grid-template-columns: repeat(5, 1fr); padding: 9px 4px max(9px, env(safe-area-inset-bottom)); border-top: 1px solid #e2e8e2; background: rgba(255,254,250,.96); backdrop-filter: blur(12px); }
-  .mobile-nav button { border: 0; color: #69837d; background: transparent; font-size: .66rem; }
-  .mobile-nav .nav-active { color: #047a6b; font-weight: 800; }
-  .mobile-nav .mobile-signout { color: #a85e59; }
+  .mobile-nav { position: fixed !important; top: 0; right: 0; bottom: auto !important; left: 0; z-index: 100; display: grid; grid-template-columns: repeat(5, 1fr); padding: max(9px, env(safe-area-inset-top)) 4px 9px; border-bottom: 1px solid rgba(206,239,220,.28); background: rgba(5, 96, 87, .96); box-shadow: 0 7px 20px rgba(5, 55, 52, .18); backdrop-filter: blur(12px); }
+  .mobile-nav button { min-height: 30px; border: 0; border-radius: 8px; color: #d7eee4; background: transparent; font-size: .66rem; }
+  .mobile-nav .nav-active { color: #063f3a; background: #c4ead6; font-weight: 800; }
+  .mobile-nav .mobile-signout { color: #ffe0d9; }
   .overview-grid { grid-template-columns: 1fr; gap: 14px; }
   .next-list { padding: 4px 17px 10px; }
   .next-row { grid-template-columns: 44px minmax(0, 1fr) auto; gap: 7px; min-height: 68px; }
@@ -284,8 +284,7 @@ button { cursor: pointer; }
   .patient-card h2 { margin-top: 11px; font-size: 1.1rem; }
   .patient-details { margin: 14px 0; padding: 10px 0; }
   .patient-action { padding: 8px; font-size: .68rem; }
-  .conversations-page { padding-bottom: 70px; }
-  .conversations-content { display: block; min-height: calc(100svh - 70px); }
+  .conversations-content { display: block; min-height: calc(100svh - 74px); }
   .conversations-mobile-header { display: block; padding: 20px 18px 4px; background: #fffefa; }
   .conversations-mobile-header h1 { margin: 0; color: #173e3a; font-family: Georgia, serif; font-size: 1.8rem; }
   .chat-list-panel { overflow: visible; max-height: 345px; padding: 15px 12px; border-right: 0; border-bottom: 1px solid #e5ebe5; }
